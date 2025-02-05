@@ -18,15 +18,6 @@ module.exports = {
             interaction.client.serverTimeouts = new Map();
         }
 
-        if (interaction.guildId === '805910546494521375' && interaction.channelId !== '806936750009221132') {
-            // Send a message to only them to use the command in the correct channel
-            await interaction.reply({
-                content: 'Please use this command in <#806936750009221132> instead.',
-                ephemeral: true
-            });
-            return;
-        }
-
         const serverTimeout = interaction.client.serverTimeouts.get(interaction.guildId);
         const isOnTimeout = serverTimeout && ((new Date()).getTime() - serverTimeout) < cooldownTimeout;
 
@@ -202,8 +193,8 @@ async function scrapeData(url) {
         redirectUrl = dealImageSrc;
     }
     else {
-        // Find image with src =  https://libidex.com/media/wysiwyg/Daily_Deal_50_OFF_2023.jpg
-        var dealImage = $("img[src='https://libidex.com/media/wysiwyg/Daily_Deal_50_OFF_2023.jpg']");
+        // Find image with src =  https://libidex.com/media/wysiwyg/libi_2.jpg
+        var dealImage = $("img[src='https://libidex.com/media/wysiwyg/libi_2.jpg']");
         var parentAnchor = dealImage.parent();
         redirectUrl = parentAnchor.attr("href");
     }

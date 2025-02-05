@@ -53,16 +53,3 @@ client.on(Events.InteractionCreate, async interaction => {
 
 // Log in to Discord with your client's token
 client.login(process.env.token);
-
-
-// ================================================
-
-// const job = new CronJob('0 9 * * *', function() {
-//   cron_check(client, ['184628844039241728', '806936750009221132', '912755074244153414']);
-// });
-// job.start();
-
-// // Use for testing
-// setTimeout(() => {
-// 	cron_check(client, ['184628844039241728']);
-// }, 1000);

@@ -23,7 +23,7 @@ module.exports = {
      * @param {ChatInputCommandInteraction} interaction
      */
 	async execute(interaction) {
-        if (interaction.user.id !== "211158782883921921" && interaction.user.id !== "183931930935427073") {
+        if (interaction.user.id !== "<ADMIN 1>" && interaction.user.id !== "<ADMIN 2>") {
             await interaction.reply({
                 content: 'This command is locked to my Masters only.',
                 ephemeral: true
@@ -171,8 +171,8 @@ async function scrapeData(url) {
         redirectUrl = dealImageSrc;
     }
     else {
-        // Find image with src =  https://libidex.com/media/wysiwyg/Daily_Deal_50_OFF_2023.jpg
-        var dealImage = $("img[src='https://libidex.com/media/wysiwyg/Daily_Deal_50_OFF_2023.jpg']");
+        // Find image with src =  https://libidex.com/media/wysiwyg/libi_2.jpg
+        var dealImage = $("img[src='https://libidex.com/media/wysiwyg/libi_2.jpg']");
         var parentAnchor = dealImage.parent();
         redirectUrl = parentAnchor.attr("href");
     }

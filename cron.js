@@ -13,7 +13,7 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 client.once(Events.ClientReady, c => {
 	console.log(`Ready! Logged in as ${c.user.tag}`);
 
-	cron_check(client, ['184628844039241728']);
+	cron_check(client, ['DISCORD_SERVER_ID', 'DISCORD_SERVER_ID2']);
 });
 
 // Log in to Discord with your client's token

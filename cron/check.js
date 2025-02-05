@@ -211,7 +211,7 @@ async function scrapeData(url) {
     }
     else {
         // Find image with src =  https://libidex.com/media/wysiwyg/Daily_Deal_50_OFF_2023.jpg
-        var dealImage = $("img[src='https://libidex.com/media/wysiwyg/Daily_Deal_50_OFF_2023.jpg']");
+        var dealImage = $("img[src='https://libidex.com/media/wysiwyg/libi_2.jpg']");
         var parentAnchor = dealImage.parent();
         redirectUrl = parentAnchor.attr("href");
     }
